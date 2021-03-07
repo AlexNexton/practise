@@ -10,7 +10,10 @@ body{
     background-color: seagreen;
 }
 
-.start_btn, .info_box, .quiz_box{
+.start_btn, 
+.info_box,
+ .quiz_box, 
+ .results_box{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -110,6 +113,7 @@ body{
 }
 
 .quiz_box{
+    display: none;
     width: 550px;
     background-color: #fff;
     border-radius: 5px;
@@ -117,6 +121,8 @@ body{
 }
 
 .quiz_box header{
+    position: relative;
+    z-index: 99;
     height: 70px;
     padding:  0 30px;
     background: #fff;
@@ -127,4 +133,199 @@ body{
     box-shadow: 0px 3px 5px 1px rgba(0,0,0,0,1);
 }
 
+.quiz_box header .title{
+    font-size: 20px;
+    font-weight: 500;
 
+}
+
+.quiz_box header .timer{
+    display: flex;
+    align-items: center;
+     justify-content: space-between;
+     width: 145px;
+     height: 45px;
+     background-color: aliceblue;
+     border: 1px solid aqua;
+     border-radius: 5px;    
+     padding: 0 8px;
+}
+
+.quiz_box header .timer .time_text{
+    font-weight: 400;
+    font-size: 17px;
+    user-select: none;
+
+}
+
+
+.quiz_box header .timer .timer_seconds{
+    font-size: 18px;
+    font-weight: 500;
+    width: 45px;
+    height: 30px;
+    background-color: rgb(0, 128, 90);
+    text-align: center;
+    color: honeydew;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid honeydew;
+    user-select: none;
+
+}
+
+.quiz_box section{
+    padding: 25px 30px 20px 30px;
+    background: honeydew;
+}
+
+
+.quiz_box section .quetion_text{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.quiz_box section .option_list{
+    padding: 20px 0;
+    display: block;
+}
+
+section .option_list .option{
+    background: aquamarine;
+    border:  1px solid seagreen;
+    border-radius: 5px;
+    padding:  8px 15px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+section .option_list .option:hover{
+    color: honeydew;
+    background: seagreen;
+    border-color: rgb(33, 80, 53);
+}
+
+ .option_list .option:last-child{
+     margin-bottom: 0px;
+
+}
+
+.option_list .option .icon{
+    height: 26px;
+    width: 26px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    pointer-events: none;
+}
+
+.option_list .option .icon.tick{
+    border-color: #23903c;
+    color: #1e4b28;
+    background: #29af48;
+}
+
+.option_list .option .icon.cross{
+    border-color: #a42834;
+    color: #811e28;
+    background: #a5525b;
+
+}
+
+.quiz_box footer{
+    height: 60px;
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.quiz_box footer .total_questions span{
+    display: flex;
+    user-select: none;
+
+}
+
+ footer .total_questions span p{
+    font-weight: 500;
+    padding: 0 5px;
+
+}
+
+footer .total_questions span p:first-child{
+    padding-left: 0px;
+
+}
+
+footer .next_btn{
+    height: 40px;
+    padding: 0 12px;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    color: honeydew;
+    background: seagreen;
+    border-color: rgb(33, 80, 53);
+    border-radius: 5px;
+
+
+}
+
+footer .next_btn:hover{
+    background: rgb(54, 233, 132);
+    border-color: rgb(33, 80, 53);
+}
+
+
+/*Results box*/
+
+.results_box{
+    background: honeydew;
+    width: 450px;
+    padding: 25px 30px;
+    border-radius: 5px;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.results_box .icon{
+    font-size: 100px;
+    color: springgreen;
+    margin-bottom: 10px;
+}
+
+.results_box .complete_text{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.results_box .score_text span{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0;
+    display: flex;
+
+}
+
+.score_text span p{
+    font-weight: 600;
+    padding: 0 4px;
+}
+
+.results_box .buttons{
+    
+}
