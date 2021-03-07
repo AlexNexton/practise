@@ -22,6 +22,15 @@ body{
                 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
+.info_box.activeInfo,
+.quiz_box.activeQuiz,
+.results_box.activeResult{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
 /*Start btn quiz styling*/
 
 .start_btn button{
@@ -182,6 +191,14 @@ body{
 
 }
 
+.quiz_box header .time_line{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background: seagreen;
+}
+
 .quiz_box section{
     padding: 25px 30px 20px 30px;
     background: honeydew;
@@ -247,6 +264,19 @@ section .option_list .option:hover{
 
 }
 
+section .option_list .option.correct{
+    border-color: #23903c;
+    color: #1e4b28;
+    background: #29af48;
+}
+
+section .option_list .option.incorrect{
+    border-color: #a42834;
+    color: #811e28;
+    background: #a5525b;
+}
+
+
 .quiz_box footer{
     height: 60px;
     width: 100%;
@@ -274,6 +304,7 @@ footer .total_questions span p:first-child{
 }
 
 footer .next_btn{
+    display: none;
     height: 40px;
     padding: 0 12px;
     font-size: 18px;
