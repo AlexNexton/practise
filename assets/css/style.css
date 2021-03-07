@@ -9,7 +9,7 @@
 
 body{
     background: seagreen;
-    background: url(../assets/img/PADDYS.jpg;) no-repeat center fixed;
+    background-image: url(../assets/img/PADDYS.jpg) no-repeat center fixed;
 }
 
 ::selection{
