@@ -2,57 +2,57 @@
 let questions = [
     {
     numb: 1,
-    question: "What does HTML stand for?",
-    answer: "Hyper Text Markup Language",
+    question: "People traditionally wear green on St. Patrick's Day to avoid what?",
+    answer: "Getting Pinched",
     options: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language"
+      "One Year Bad Luck",
+      "Getting Pinched",
+      "People not knowing they're Irish",
+      "Getting Kissed"
     ]
   },
     {
     numb: 2,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
+    question: "What nationality was St. Patrick?",
+    answer: "Scotish",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+      "Irish",
+      "German",
+      "Scotish",
+      "British"
     ]
   },
     {
     numb: 3,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    question: "Which U.S. city dyes its river green annually to celebrate St. Patrick's Day?",
+    answer: "Chicago",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "New York",
+      "Boston",
+      "Los Angeles",
+      "Chicago"
     ]
   },
     {
     numb: 4,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: "According to myth, when is the best time to sneak up on a leprechaun?",
+    answer: "While he's mending his shoes.",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "While he's mending his shoes.",
+      "When he's eating.",
+      "When he's taking a nap.",
+      "when he's counting gold."
     ]
   },
     {
     numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
+    question: "How many pints of Guinness are consumed worldwide on St. Patrick's Day?",
+    answer: "13 million",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "1 million",
+      "6 million",
+      "13 million",
+      "500 thousand"
     ]
   },
   // you can uncomment the below codes and make duplicate as more as you want to add question

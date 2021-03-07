@@ -8,7 +8,8 @@
 }
 
 body{
-    background-color: seagreen;
+    background: seagreen;
+    background: url(../assets/img/PADDYS.jpg;) no-repeat center fixed;
 }
 
 ::selection{
