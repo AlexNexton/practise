@@ -18,6 +18,8 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 /*Start btn quiz styling*/
@@ -35,10 +37,14 @@ body{
 }
 
 .info_box{
-    display: none;
+    
     width: 540px;
     background: #fff;
     border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+
 }
 /*line at the bottom of the card*/
 .info_box .info_title{
@@ -47,7 +53,7 @@ body{
     border-bottom: 1px solid black;
     display: flex;
     align-items: center;
-    padding: 0 35px;
+    padding: 0 30px;
     font-size: 20px;
     font-weight: 500;
 }
@@ -113,7 +119,9 @@ body{
 }
 
 .quiz_box{
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
     width: 550px;
     background-color: #fff;
     border-radius: 5px;
@@ -289,7 +297,7 @@ footer .next_btn:hover{
 /*Results box*/
 
 .results_box{
-    background: honeydew;
+    background: rgb(185, 195, 185);
     width: 450px;
     padding: 25px 30px;
     border-radius: 5px;
@@ -298,6 +306,9 @@ footer .next_btn:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
 
 }
 
@@ -327,5 +338,21 @@ footer .next_btn:hover{
 }
 
 .results_box .buttons{
-    
+    display: flex;
+    margin: 20px 0;
+
+}
+
+.results_box .buttons button{
+    margin: 0 10px;
+    height: 45px;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
 }
